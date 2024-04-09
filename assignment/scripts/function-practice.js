@@ -6,16 +6,19 @@ console.log('***** Function Practice *****');
 
 // 1. Function to return 'Hello World!'
 function hello() {
-  console.log('Hello World!');
+
   return 'Hello World!';
 }
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
+//NEED TO DO
+
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
+
   return;
 }
 // Remember to call the function to test
@@ -29,30 +32,37 @@ function addNumbers(firstNumber, secondNumber) {
   return answer;
 }
 
-console.log('The answer is:', addNumbers());
+console.log('The answer is:', addNumbers(3, 10));
 
 
 // 4. Function to multiply three numbers & return the result
 
-function multiplyThree(){
+function multiplyThree(num1, num2, num3){
   console.log('in multiplyThree');
-  let answer = 3 * 4 * 2;
+  let answer = num1 * num2 * num3;
   return answer
 }
 
-console.log('The answer is ', multiplyThree());
+console.log('The answer is ', multiplyThree(2, 3, 4));
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
+  console.log('Is the number',number, 'positive:');
   if (number > 0) {
-    return;
+    result = true;
   }
-  return;
+  else{
+    result = false;
+  }
+  return result;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
+
+console.log(isPositive(-5));
+console.log(isPositive(3));
 
 
 // 6. Function to return the _last_ item in an array. If the 
