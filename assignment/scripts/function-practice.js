@@ -68,8 +68,16 @@ console.log(isPositive(3));
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-
+  console.log('in getLast');
+//   if(){
+//     result = last;
+//   }
+//   else{
+//     result = `undefined`;
+//   }
+//   return ;
 }
+// console.log('last item is', getLast('tennis', 'football'));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -91,17 +99,30 @@ function isFirstLetter(letter, string) {
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0;
-  // TODO: loop to add items
+//   // TODO: loop to add items
+//   for(let i = 0; i <array.length; i ++){
+//   }
 
-  // TODO: return the sum
+//   // TODO: return the sum
+//   return sumAll;
 }
+// console.log('Sum of sumAll', sumAll[5, 7, 2, 1]);
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 function allPositive() {
-
+  // console.log('in allPositive array');
+  if (allPositive.array > 0) {
+    result = allPositive(7, 16, 3, 10);
+  }
+  else{
+    result = allPositive();
+  }
+  return result;
 }
+
+console.log('The allPositive array contains:', result);
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
