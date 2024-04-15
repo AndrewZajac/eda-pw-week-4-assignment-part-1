@@ -12,17 +12,18 @@ function hello() {
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
-//NEED TO DO
-
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-
-  return;
+  // return a string like 'Hello, Jo!', or 'Hello, Stacy!'
+  // console.log(`Hello ${name}`);
+  return `Hello, ${name}!`;
 }
 // Remember to call the function to test
-
+console.log(helloName('Andrew'));
+// const greeting = helloName('Dave');
+// console.log(greeting);
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
@@ -67,24 +68,45 @@ console.log(isPositive(3));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+const array = [];
 function getLast(array) {
-  console.log('in getLast');
-//   if(){
-//     result = last;
-//   }
-//   else{
-//     result = `undefined`;
-//   }
-//   return ;
+  return array[array.length -1];
 }
-// console.log('last item is', getLast('tennis', 'football'));
+console.log(getLast(array));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
 
+
+function find(value, array) {
+  for ( let i = 0; i < array.length; i ++)
+    if(array[i] === value){
+      return true;
+    } 
+    return false;
 }
+
+console.log(find(15, array));
+
+// let value = ['money'];
+
+// function find(value, array) {
+//   var result = false;
+//   for ( let i = 0; i < value.length; i ++) {
+//     if(value[i] === 'money'){
+//       console.log('money found.');
+//       result = true;
+//       break;
+//     } else if(Array.isArray(value[i])){
+//       result = find(value[i]);
+//       console.log('money was not found, must keep looking!');
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(find(value));
 
 // ----------------------
 // Stretch Goals
@@ -114,10 +136,10 @@ function sumAll(array) {
 function allPositive() {
   // console.log('in allPositive array');
   if (allPositive.array > 0) {
-    result = allPositive(7, 16, 3, 10);
+    result 
   }
   else{
-    result = allPositive();
+    result 
   }
   return result;
 }
@@ -148,3 +170,13 @@ try {
 } catch (e) {
   // Do nothing
 }
+
+
+// function handWashDishes (unsafeDishwasher){
+//   if (unsafeDishwasher){
+//     console.log('I need to hand wash the dishes that can not go into the dishwasher.');
+//   } else{
+//     console.log('I can load this dish into the dishwasher.');
+//   }
+// }
+// console.log(handWashDishes());
