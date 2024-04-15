@@ -114,21 +114,27 @@ console.log(find(15, array));
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  for ( let i = 0; i < string.length; i ++)
+    if(string[i] === letter){
+      console.log('I found the first ');
+      return true;
+    } 
+    return false;
 }
-
+console.log(find('Bath', array));
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
-  let sum = 0;
 //   // TODO: loop to add items
-//   for(let i = 0; i <array.length; i ++){
-//   }
+  let sum = 0;
+  for(let i = 0; i <array.length; i ++){
+    sum += array[i];
+  }
 
 //   // TODO: return the sum
-//   return sumAll;
+  return sumAll;
 }
-// console.log('Sum of sumAll', sumAll[5, 7, 2, 1]);
+console.log('Sum of sumAll', sumAll[5, 7, 2, 1]);
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
